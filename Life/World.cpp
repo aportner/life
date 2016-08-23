@@ -30,18 +30,13 @@ CellTree* World::mAddCell( CellTree *cell, int64_t x, int64_t y, int steps ) {
     CellTree *child = 0;
 
     if (steps == CellTree::TREE_STEPS - 1) {
-        cout << "D" << index << endl;
-
         child = cell->addChild( index );
         assert( child != 0 );
 
         child->x = x;
         child->y = y;
     } else {
-        cout << "C" << index << endl;
-
         child = cell->addChild( index );
-        cout << "C.." << endl;
         assert( child != 0 );
 
         child = mAddCell( child, x, y, steps + 1 );

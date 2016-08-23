@@ -7,7 +7,6 @@ using namespace std;
 
 CellTree::~CellTree() {
     if (mChildren != 0) {
-        cout << "DELETE" << endl;
         for (int i = 0; i < TREE_SIZE; ++i) {
             if (mChildren[i] != 0) {
                 delete mChildren[i];
