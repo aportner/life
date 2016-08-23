@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3B215E41D6BEA4C00D4AABC /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3B215E21D6BEA4C00D4AABC /* Game.cpp */; };
 		F3C0AFDA1D6BDAF200B67159 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3C0AFD91D6BDAF100B67159 /* main.cpp */; };
 		F3C0AFE41D6BDB3000B67159 /* CellTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3C0AFE01D6BDB3000B67159 /* CellTree.cpp */; };
 		F3C0AFE51D6BDB3000B67159 /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3C0AFE21D6BDB3000B67159 /* World.cpp */; };
+		F3C0AFE81D6BDBCA00B67159 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3C0AFE61D6BDBCA00B67159 /* test.cpp */; };
+		F3C0AFEA1D6BE17F00B67159 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C0AFE91D6BE17F00B67159 /* GLUT.framework */; };
+		F3C0AFEC1D6BE18700B67159 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C0AFEB1D6BE18700B67159 /* OpenGL.framework */; };
+		F3C0AFEE1D6BE18B00B67159 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C0AFED1D6BE18B00B67159 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,12 +30,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F3B215E21D6BEA4C00D4AABC /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		F3B215E31D6BEA4C00D4AABC /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		F3C0AFD61D6BDAF100B67159 /* Life */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Life; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C0AFD91D6BDAF100B67159 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F3C0AFE01D6BDB3000B67159 /* CellTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CellTree.cpp; sourceTree = "<group>"; };
 		F3C0AFE11D6BDB3000B67159 /* CellTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellTree.h; sourceTree = "<group>"; };
 		F3C0AFE21D6BDB3000B67159 /* World.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = World.cpp; sourceTree = "<group>"; };
 		F3C0AFE31D6BDB3000B67159 /* World.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = World.h; sourceTree = "<group>"; };
+		F3C0AFE61D6BDBCA00B67159 /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
+		F3C0AFE91D6BE17F00B67159 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		F3C0AFEB1D6BE18700B67159 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		F3C0AFED1D6BE18B00B67159 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +49,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3C0AFEE1D6BE18B00B67159 /* Cocoa.framework in Frameworks */,
+				F3C0AFEC1D6BE18700B67159 /* OpenGL.framework in Frameworks */,
+				F3C0AFEA1D6BE17F00B67159 /* GLUT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +61,9 @@
 		F3C0AFCD1D6BDAF100B67159 = {
 			isa = PBXGroup;
 			children = (
+				F3C0AFED1D6BE18B00B67159 /* Cocoa.framework */,
+				F3C0AFEB1D6BE18700B67159 /* OpenGL.framework */,
+				F3C0AFE91D6BE17F00B67159 /* GLUT.framework */,
 				F3C0AFD81D6BDAF100B67159 /* Life */,
 				F3C0AFD71D6BDAF100B67159 /* Products */,
 			);
@@ -68,6 +85,9 @@
 				F3C0AFE21D6BDB3000B67159 /* World.cpp */,
 				F3C0AFE31D6BDB3000B67159 /* World.h */,
 				F3C0AFD91D6BDAF100B67159 /* main.cpp */,
+				F3C0AFE61D6BDBCA00B67159 /* test.cpp */,
+				F3B215E21D6BEA4C00D4AABC /* Game.cpp */,
+				F3B215E31D6BEA4C00D4AABC /* Game.h */,
 			);
 			path = Life;
 			sourceTree = "<group>";
@@ -129,8 +149,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3C0AFDA1D6BDAF200B67159 /* main.cpp in Sources */,
+				F3C0AFE81D6BDBCA00B67159 /* test.cpp in Sources */,
 				F3C0AFE41D6BDB3000B67159 /* CellTree.cpp in Sources */,
 				F3C0AFE51D6BDB3000B67159 /* World.cpp in Sources */,
+				F3B215E41D6BEA4C00D4AABC /* Game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +273,7 @@
 				F3C0AFDF1D6BDAF200B67159 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

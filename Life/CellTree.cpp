@@ -6,6 +6,8 @@
 using namespace std;
 
 CellTree::~CellTree() {
+    // delete all the children recursively
+    // this could be easily converted to pooling if I had more time
     if (mChildren != 0) {
         for (int i = 0; i < TREE_SIZE; ++i) {
             if (mChildren[i] != 0) {
@@ -19,9 +21,15 @@ CellTree::~CellTree() {
     }
 }
 
+bool CellTree::hasChildren() {
+    return mChildren != 0;
+}
+
 CellTree* CellTree::addChild(int index) {
+    // check to see if the child exists already
     CellTree *cell = getChild( index );
 
+    // only add if it doesn't exist
     if ( cell == 0 ) {
         cell = new CellTree();
         assert( cell != 0 );
@@ -45,6 +53,7 @@ CellTree* CellTree::getChild(int index) {
 }
 
 void CellTree::initChildren() {
+    // initialize it to empty children
     mChildren = new CellTree*[TREE_SIZE];
     memset( mChildren, 0, TREE_SIZE * sizeof(CellTree*) );
 }
