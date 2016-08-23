@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F3C0AFDA1D6BDAF200B67159 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3C0AFD91D6BDAF100B67159 /* main.cpp */; };
+		F3C0AFE41D6BDB3000B67159 /* CellTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3C0AFE01D6BDB3000B67159 /* CellTree.cpp */; };
+		F3C0AFE51D6BDB3000B67159 /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3C0AFE21D6BDB3000B67159 /* World.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		F3C0AFD61D6BDAF100B67159 /* Life */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Life; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C0AFD91D6BDAF100B67159 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F3C0AFE01D6BDB3000B67159 /* CellTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CellTree.cpp; sourceTree = "<group>"; };
+		F3C0AFE11D6BDB3000B67159 /* CellTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellTree.h; sourceTree = "<group>"; };
+		F3C0AFE21D6BDB3000B67159 /* World.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = World.cpp; sourceTree = "<group>"; };
+		F3C0AFE31D6BDB3000B67159 /* World.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = World.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,10 @@
 		F3C0AFD81D6BDAF100B67159 /* Life */ = {
 			isa = PBXGroup;
 			children = (
+				F3C0AFE01D6BDB3000B67159 /* CellTree.cpp */,
+				F3C0AFE11D6BDB3000B67159 /* CellTree.h */,
+				F3C0AFE21D6BDB3000B67159 /* World.cpp */,
+				F3C0AFE31D6BDB3000B67159 /* World.h */,
 				F3C0AFD91D6BDAF100B67159 /* main.cpp */,
 			);
 			path = Life;
@@ -119,6 +129,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3C0AFDA1D6BDAF200B67159 /* main.cpp in Sources */,
+				F3C0AFE41D6BDB3000B67159 /* CellTree.cpp in Sources */,
+				F3C0AFE51D6BDB3000B67159 /* World.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

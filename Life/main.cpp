@@ -1,15 +1,23 @@
-//
-//  main.cpp
-//  Life
-//
-//  Created by Andrew Portner on 8/22/16.
-//  Copyright © 2016 Andrew Portner. All rights reserved.
-//
-
+#include <cstddef>
 #include <iostream>
+#include <cassert>
+#include "World.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+
+void test() {
+    World w;
+
+    // test adding
+    CellTree *c = w.addCell( 0, 0 );
+    c->isAlive = true;
+
+    CellTree *c2 = w.getCell( 0, 0 );
+    assert( c == c2 );
+}
+
+int main() {
+    test();
+
     return 0;
 }
